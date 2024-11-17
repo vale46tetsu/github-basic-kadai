@@ -1,0 +1,17 @@
+PS C:\git_kadai\git_challenge> git init
+Reinitialized existing Git repository in C:/git_kadai/git_challenge/.git/
+PS C:\git_kadai\git_challenge> echo "Hello,world!" > hello_world.txt
+PS C:\git_kadai\git_challenge> git add hello_world.txt
+PS C:\git_kadai\git_challenge> git commit -m "最初のコミット"
+[main a3117d6] 最初のコミット
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\git_kadai\git_challenge> echo "こんにちは世界" >> hello_world.txt 
+PS C:\git_kadai\git_challenge> git add hello_world.txt
+PS C:\git_kadai\git_challenge> git commit -m "日本語訳を追記"
+[main eacfa28] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\git_kadai\git_challenge> git log --online hello_world.txt
+fatal: unrecognized argument: --online
+PS C:\git_kadai\git_challenge> git log --oneline hello_world.txt
+eacfa28 (HEAD -> main) 日本語訳を追記
+a3117d6 最初のコミット
